@@ -651,17 +651,38 @@ body{
   transform: scale(1.2);
 }
 
-/* Mobile view: stack neatly */
-@media (max-width: 600px) {
+/* Mobile view: stack neatly and center contact section */
+@media (max-width: 768px) {
   .footer-container {
     flex-direction: column;
-    align-items: center;
+    align-items: center;   
     text-align: center;
+    gap: 20px; /* spacing between sections */
   }
+
   .Details {
-    align-items: center;
+    align-items: center;   
+    margin-left: 0; /* remove big left margin */
+    text-align: center;
+    gap: 15px;
   }
+
+  .footer-title {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+  }
+
+  .footer-email {
+    width: 100%;   /* full width on mobile */
+    max-width: 300px;
+  }
+
+  .resume-link {
+    justify-content: center;
+  }
+
   .footer-grid {
     justify-content: center;
+    margin: 1.5rem 0 0 0;
   }
 }
